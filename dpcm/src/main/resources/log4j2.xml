@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<appenders>
+		<Console name="STDOUT" target="SYSTEM_OUT" follow="true">
+			<PatternLayout pattern="%-7d{HH:mm:ss,SSS} [%-5p] %.30c: %m%n" />
+		</Console>
+	</appenders>
+	<loggers>
+		<root level="debug">
+			<appender-ref ref="STDOUT" />
+		</root>
+		<!-- JGroups -->
+		<logger name="org.jgroups" level="debug" additivity="false">
+			<appender-ref ref="STDOUT" />
+		</logger>
+		<!-- JBoss -->
+		<logger name="org.jboss.as.cli" level="off" />
+		<logger name="org.jboss.remoting" level="off" />
+		<logger name="org.jboss.as.protocol" level="off" />
+		<logger name="org.xnio" level="off" />
+		<!-- DPCM -->
+		<logger name="org.sisto.dpcm" level="debug" additivity="false">
+			<appender-ref ref="STDOUT" />
+		</logger>
+		<logger name="org.sisto.dpcm.configuration" level="debug" />
+		<logger name="org.sisto.dpcm.group" level="debug" />
+		<logger name="org.sisto.dpcm.manager" level="debug" />
+		<logger name="org.sisto.dpcm.monitor" level="debug" />
+		<logger name="org.sisto.dpcm.process" level="debug" />
+	</loggers>
+</configuration>

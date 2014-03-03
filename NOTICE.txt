@@ -1,0 +1,12 @@
+THIRD PARTY LIBRARIES:
+
+1# jlibs
+https://code.google.com/p/jlibs/
+GNU Lesser GPL version 2.1 or later
+http://www.gnu.org/licenses/lgpl.html
+
+2# jgroups-3.4.0.Final
+http://www.jgroups.org/
+Apache License 2.0
+http://www.apache.org/licenses/LICENSE-2.0
+
